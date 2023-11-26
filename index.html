@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista De Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="listacompras">
+        <h1>Lista de Compras</h1>
+
+        <form id="form">
+            <label for="nome">Nome do Item:</label>
+            <input type="text" id="nome" required>
+
+            <label for="preco">Preço:</label>
+            <input type="number" id="preco" required>
+
+            <button type="submit">Adicionar Item</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome do Item</th>
+                    <th>Preço</th>
+                    <th>Comprado</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="item-list"></tbody>
+        </table>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
